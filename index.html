@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Kerem Köse — Software Developer | Portfolio</title>
+  <meta name="title" content="Kerem Köse — Software Developer | Portfolio">
+  <meta name="description" content="Kerem Köse - Software Developer Portfolio. Android, Python, Java, Kotlin, C++, PHP ve Web projeleri. Building digital experiences through code, creativity and technology.">
+  <meta name="keywords" content="Kerem Köse, Kerem Kose, Software Developer, Android Developer, Python, Kotlin, Java, C++, PHP, Web Developer, GitHub Pages, Portfolio">
+  <meta name="author" content="Kerem Köse">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#080B0A">
+  <link rel="canonical" href="https://keremkose61.github.io/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://keremkose61.github.io/">
+  <meta property="og:title" content="Kerem Köse — Software Developer | Portfolio">
+  <meta property="og:description" content="Building digital experiences through code, creativity and technology. Keşfedin: Android, Yapay Zekâ, C++, Web projeleri.">
+  <meta property="og:image" content="assets/icons/favicon.svg">
+
+  <!-- Twitter / X -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://keremkose61.github.io/">
+  <meta property="twitter:title" content="Kerem Köse — Software Developer | Portfolio">
+  <meta property="twitter:description" content="Building digital experiences through code, creativity and technology.">
+  <meta property="twitter:image" content="assets/icons/favicon.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Reading Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- Ambient Background Glows & Mesh Grid -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Kerem Köse Portfolio">
+        <span class="logo-symbol">&lt;</span><span class="logo-name">Kerem Köse</span><span class="logo-dot">.</span><span class="logo-symbol">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Ana Menü">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link" data-i18n="nav.about"><span class="nav-num">01.</span> Hakkımda</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav.skills"><span class="nav-num">02.</span> Yetenekler</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav.projects"><span class="nav-num">03.</span> Projeler</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="nav.experience"><span class="nav-num">04.</span> Deneyim & Eğitim</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact"><span class="nav-num">05.</span> İletişim</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <button class="lang-switch-btn" id="langSwitchBtn" aria-label="Dili Değiştir / Switch Language" title="Dili Değiştir">
+          <span class="lang-tag lang-tr active">TR</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-tag lang-en">EN</span>
+        </button>
+
+        <!-- CV Action Button -->
+        <a href="assets/documents/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm nav-cv-btn" id="navCvBtn" data-i18n="hero.cta_cv">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>CV</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menüyü Aç / Kapat" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-drawer-content">
+        <ul class="mobile-nav-links">
+          <li><a href="#about" class="mobile-nav-link" data-i18n="nav.about"><span class="nav-num">01.</span> Hakkımda</a></li>
+          <li><a href="#skills" class="mobile-nav-link" data-i18n="nav.skills"><span class="nav-num">02.</span> Yetenekler</a></li>
+          <li><a href="#projects" class="mobile-nav-link" data-i18n="nav.projects"><span class="nav-num">03.</span> Projeler</a></li>
+          <li><a href="#experience" class="mobile-nav-link" data-i18n="nav.experience"><span class="nav-num">04.</span> Deneyim & Eğitim</a></li>
+          <li><a href="#contact" class="mobile-nav-link" data-i18n="nav.contact"><span class="nav-num">05.</span> İletişim</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <a href="assets/documents/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block" data-i18n="hero.cta_cv">
+            CV'mi Görüntüle (PDF)
+          </a>
+          <a href="https://github.com/keremkose61" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block mt-2">
+            GitHub @keremkose61
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <!-- Status Pill -->
+          <div class="status-pill" data-aos="fade-up">
+            <span class="pulse-dot"></span>
+            <span class="status-text" data-i18n="hero.status">Yeni projelere & iş birliklerine açık</span>
+          </div>
+
+          <!-- Name & Role -->
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+            <span class="hero-greeting" data-i18n="hero.greeting">Merhaba, ben</span>
+            <span class="hero-name">KEREM KÖSE</span>
+          </h1>
+
+          <div class="hero-role-wrapper" data-aos="fade-up" data-aos-delay="150">
+            <span class="role-static" data-i18n="hero.title">Software Developer</span>
+            <span class="role-separator">•</span>
+            <span class="role-dynamic" id="dynamicRole">Android & Systems Enthusiast</span>
+          </div>
+
+          <!-- Quote Tagline -->
+          <blockquote class="hero-tagline" data-aos="fade-up" data-aos-delay="200" data-i18n="hero.tagline">
+            "Building digital experiences through code, creativity and technology."
+          </blockquote>
+
+          <!-- Bio Description -->
+          <p class="hero-desc" data-aos="fade-up" data-aos-delay="250" data-i18n="hero.bio">
+            Kendimi geliştirmeye, yeni teknolojiler öğrenmeye ve gerçek problemlere yazılım çözümleri üretmeye odaklanıyorum.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+            <!-- CTA 1: Projelerimi İncele -->
+            <a href="#projects" class="btn btn-primary">
+              <span data-i18n="hero.cta_projects">Projelerimi İncele</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <!-- CTA 2: CV'mi Görüntüle -->
+            <a href="assets/documents/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span data-i18n="hero.cta_cv">CV'mi Görüntüle</span>
+            </a>
+
+            <!-- CTA 3: GitHub Profilim -->
+            <a href="https://github.com/keremkose61" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="GitHub Profilim">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+              </svg>
+              <span data-i18n="hero.cta_github">GitHub Profilim</span>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="hero-metrics" data-aos="fade-up" data-aos-delay="350">
+            <div class="metric-item">
+              <span class="metric-number">7+</span>
+              <span class="metric-label" data-i18n="hero.metric_projects">Geliştirilmiş Proje</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">12+</span>
+              <span class="metric-label" data-i18n="hero.metric_tech">Teknoloji & Araç</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">100%</span>
+              <span class="metric-label" data-i18n="hero.metric_dedication">Sürekli Gelişim</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Interactive Visual: Developer Terminal Window -->
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+          <div class="terminal-card glass-panel">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="t-dot t-red"></span>
+                <span class="t-dot t-yellow"></span>
+                <span class="t-dot t-green"></span>
+              </div>
+              <div class="terminal-title">kerem@developer: ~/portfolio</div>
+              <button class="terminal-copy-btn" id="terminalCopyBtn" aria-label="Kodu Kopyala" title="Kodu Kopyala">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-code-block" id="terminalCodeText">
+                <p class="t-comment">// Developer Profile Object</p>
+                <p><span class="t-keyword">const</span> <span class="t-var">developer</span> = {</p>
+                <p class="indent-1"><span class="t-prop">name</span>: <span class="t-str">"Kerem Köse"</span>,</p>
+                <p class="indent-1"><span class="t-prop">role</span>: <span class="t-str">"Software Developer"</span>,</p>
+                <p class="indent-1"><span class="t-prop">status</span>: <span class="t-str highlight">"Ready to Build &amp; Innovate"</span>,</p>
+                <p class="indent-1"><span class="t-prop">coreStack</span>: [</p>
+                <p class="indent-2"><span class="t-str">"Kotlin"</span>, <span class="t-str">"Java"</span>, <span class="t-str">"Python"</span>,</p>
+                <p class="indent-2"><span class="t-str">"C++"</span>, <span class="t-str">"JavaScript"</span>, <span class="t-str">"PHP"</span></p>
+                <p class="indent-1">],</p>
+                <p class="indent-1"><span class="t-prop">passion</span>: <span class="t-str">"Mobile, AI &amp; Desktop Engineering"</span></p>
+                <p>};</p>
+              </div>
+
+              <!-- Interactive CLI Prompt -->
+              <div class="terminal-cli">
+                <div class="cli-output" id="cliOutput">
+                  <span class="cli-hint">Komutlar: 'help', 'skills', 'projects', 'github', 'clear'</span>
+                </div>
+                <div class="cli-input-line">
+                  <span class="cli-prompt">$</span>
+                  <input type="text" id="cliInput" class="cli-input" placeholder="komut yazın... (örn: help)" autocomplete="off" spellcheck="false">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">01 // <span data-i18n="about.tag">HAKKIMDA</span></span>
+          <h2 class="section-title" data-i18n="about.title">Yazılım ve Teknolojiye Olan Tutkum</h2>
+          <p class="section-subtitle" data-i18n="about.subtitle">Modern mimariler, algoritmik düşünce ve kullanıcı odaklı çözümler</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- About Text Narrative -->
+          <div class="about-narrative glass-panel" data-aos="fade-right">
+            <h3 class="about-subheading" data-i18n="about.p1_heading">Fikirleri Fonksiyonel Gerçekliklere Dönüştürmek</h3>
+            <p class="about-text" data-i18n="about.p1">
+              Yazılım dünyasına adım attığım ilk günden bu yana, kod yazmayı sadece bir teknik süreç olarak değil; problem çözme, yaratıcılık ve sistem mimarisi sanatı olarak görüyorum. Farklı paradigmaları, modern geliştirme standartlarını ve yeni teknolojileri öğrenmeye büyük bir merak duyuyorum.
+            </p>
+            <p class="about-text" data-i18n="about.p2">
+              Mobil platformlarda Android ve Kotlin ekosisteminden masaüstü ve sistem geliştirmede C++ ve Python'a; web mimarilerinde modern JavaScript ve PHP'den yapay zekâ entegrasyonlarına kadar geniş bir yelpazede projeler ürettim. Hedefim; her projede temiz, sürdürülebilir ve yüksek performanslı yazılımlar ortaya koymaktır.
+            </p>
+            
+            <!-- Key Attributes -->
+            <div class="about-pills">
+              <span class="pill-item">⚡ Analitik Problem Çözme</span>
+              <span class="pill-item">📱 Android & Native Architecture</span>
+              <span class="pill-item">🤖 Yapay Zekâ & LLM Entegrasyonu</span>
+              <span class="pill-item">🎯 Temiz Kod (Clean Code) Standartları</span>
+              <span class="pill-item">🔄 Sürekli Öğrenme & Adaptasyon</span>
+            </div>
+          </div>
+
+          <!-- About Highlight Cards -->
+          <div class="about-cards-col" data-aos="fade-left">
+            <div class="about-feature-card glass-panel">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4 class="feature-title" data-i18n="about.card1_title">Mobil & Sistem Mimarisi</h4>
+                <p class="feature-desc" data-i18n="about.card1_desc">Android ekosisteminde Kotlin ve Java ile yerel uygulamalar; C++ ve Python ile verimli masaüstü araçları.</p>
+              </div>
+            </div>
+
+            <div class="about-feature-card glass-panel">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4 class="feature-title" data-i18n="about.card2_title">Yapay Zekâ ve Otomasyon</h4>
+                <p class="feature-desc" data-i18n="about.card2_desc">Akıllı asistan sistemleri, yerel ses işleme ve öğrenme algoritmalarıyla zenginleştirilmiş uygulamalar.</p>
+              </div>
+            </div>
+
+            <div class="about-feature-card glass-panel">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4 class="feature-title" data-i18n="about.card3_title">Temiz Kod & Sürdürülebilirlik</h4>
+                <p class="feature-desc" data-i18n="about.card3_desc">Modüler yapı, anlaşılır dokümantasyon, Git sürüm kontrolü ve ölçeklenebilir kod tasarımı.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">02 // <span data-i18n="skills.tag">TEKNİK YETENEKLER</span></span>
+          <h2 class="section-title" data-i18n="skills.title">Teknoloji & Araç Ekosistemi</h2>
+          <p class="section-subtitle" data-i18n="skills.subtitle">Doğrulanmamış yüzdeler yerine gerçek yetenekler ve çalışma alanları</p>
+        </div>
+
+        <!-- Skill Categories Grid -->
+        <div class="skills-grid">
+          <!-- Category 1: Programlama Dilleri -->
+          <div class="skill-category-card glass-panel" data-aos="fade-up" data-aos-delay="100">
+            <div class="category-header">
+              <div class="cat-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title" data-i18n="skills.cat_languages">Programlama Dilleri</h3>
+                <span class="category-count">6 Dil</span>
+              </div>
+            </div>
+            <p class="category-desc" data-i18n="skills.cat_languages_desc">Sistem, mobil, web ve algoritma geliştirmede kullanılan temel diller.</p>
+            <div class="tech-badge-list">
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">Python</span>
+                <span class="badge-tag">AI / Scripting</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">Java</span>
+                <span class="badge-tag">OOP / Android</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">Kotlin</span>
+                <span class="badge-tag">Modern Android</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">C++</span>
+                <span class="badge-tag">High Performance</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">JavaScript</span>
+                <span class="badge-tag">ES6+ / Web</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">PHP</span>
+                <span class="badge-tag">Backend / Web</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Mobil & Masaüstü -->
+          <div class="skill-category-card glass-panel" data-aos="fade-up" data-aos-delay="150">
+            <div class="category-header">
+              <div class="cat-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title" data-i18n="skills.cat_mobile">Mobil & Sistemler</h3>
+                <span class="category-count">Android & Desktop</span>
+              </div>
+            </div>
+            <p class="category-desc" data-i18n="skills.cat_mobile_desc">Yerel Android uygulamaları, yaşam döngüsü yönetimi ve sistem optimizasyonu.</p>
+            <div class="tech-badge-list">
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">Android Development</span>
+                <span class="badge-tag">Native</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">Android Studio</span>
+                <span class="badge-tag">IDE Suite</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">Coroutines & Async</span>
+                <span class="badge-tag">Concurrency</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">Desktop Architecture</span>
+                <span class="badge-tag">C++ / Qt</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">Voice & Speech Engines</span>
+                <span class="badge-tag">NLP Audio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Web & Veritabanı -->
+          <div class="skill-category-card glass-panel" data-aos="fade-up" data-aos-delay="200">
+            <div class="category-header">
+              <div class="cat-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title" data-i18n="skills.cat_web">Web & Veritabanı</h3>
+                <span class="category-count">Frontend & Data</span>
+              </div>
+            </div>
+            <p class="category-desc" data-i18n="skills.cat_web_desc">Kullanıcı dostu arayüzler, modern tasarım standartları ve veritabanı yönetimi.</p>
+            <div class="tech-badge-list">
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">HTML5</span>
+                <span class="badge-tag">Semantic Markup</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">CSS3</span>
+                <span class="badge-tag">Animations / Grid</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">MySQL</span>
+                <span class="badge-tag">Relational DB</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">Responsive Design</span>
+                <span class="badge-tag">Mobile First</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">RESTful APIs</span>
+                <span class="badge-tag">JSON Services</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Araçlar & Sürüm Kontrolü -->
+          <div class="skill-category-card glass-panel" data-aos="fade-up" data-aos-delay="250">
+            <div class="category-header">
+              <div class="cat-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title" data-i18n="skills.cat_tools">Araçlar & İş Akışı</h3>
+                <span class="category-count">DevOps & Workflow</span>
+              </div>
+            </div>
+            <p class="category-desc" data-i18n="skills.cat_tools_desc">Versiyon kontrolü, kod kalitesi ve modern geliştirici araç takımı.</p>
+            <div class="tech-badge-list">
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">Git</span>
+                <span class="badge-tag">Version Control</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">GitHub</span>
+                <span class="badge-tag">Repositories & Pages</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">Linux / Terminal</span>
+                <span class="badge-tag">Shell Scripting</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">OOP & Clean Code</span>
+                <span class="badge-tag">Architecture</span>
+              </div>
+              <div class="tech-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-name">Debugging & Profiling</span>
+                <span class="badge-tag">Performance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">03 // <span data-i18n="projects.tag">PROJELER</span></span>
+          <h2 class="section-title" data-i18n="projects.title">Geliştirdiğim Seçkin Çalışmalar</h2>
+          <p class="section-subtitle" data-i18n="projects.subtitle">Gerçek problemlere yazılım çözümleri üreten 7 özgün proje</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+          <button class="filter-btn active" data-filter="all" data-i18n="projects.filter_all">Hepsi</button>
+          <button class="filter-btn" data-filter="mobile" data-i18n="projects.filter_mobile">Mobil & Android</button>
+          <button class="filter-btn" data-filter="ai" data-i18n="projects.filter_ai">Yapay Zekâ</button>
+          <button class="filter-btn" data-filter="desktop" data-i18n="projects.filter_desktop">Masaüstü & Oyun</button>
+          <button class="filter-btn" data-filter="web" data-i18n="projects.filter_web">Web & Sistem</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- PROJECT 1: ODİS -->
+          <article class="project-card glass-panel" data-category="web" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-media">
+              <img src="assets/images/project-odis.svg" alt="ODİS — Okul Disiplin ve İzleme Sistemi" loading="lazy" class="project-img">
+              <div class="project-media-overlay">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-project="odis" data-i18n="projects.view_details">Detayları İncele</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <span class="project-cat-pill">Web &amp; Management</span>
+                <span class="project-id">#01</span>
+              </div>
+              <h3 class="project-title">ODİS — Okul Disiplin ve İzleme Sistemi</h3>
+              <p class="project-desc" data-i18n="projects.odis_desc">
+                Okul yönetimi ve rehberlik birimleri için öğrenci disiplin kayıtları, süreç takibi, veli bilgilendirme ve otomatik raporlama sağlayan kapsamlı yönetim yazılımı.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5/CSS3</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-project="odis" data-i18n="projects.view_details">
+                  Detayları İncele
+                </button>
+                <a href="https://github.com/keremkose61" target="_blank" rel="noopener noreferrer" class="btn btn-icon-only" aria-label="GitHub Bağlantısı" title="GitHub Deposu">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: BrainBoost -->
+          <article class="project-card glass-panel" data-category="ai web" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-media">
+              <img src="assets/images/project-brainboost.svg" alt="BrainBoost — AI-Powered Learning Platform" loading="lazy" class="project-img">
+              <div class="project-media-overlay">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-project="brainboost" data-i18n="projects.view_details">Detayları İncele</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <span class="project-cat-pill">AI &amp; EdTech</span>
+                <span class="project-id">#02</span>
+              </div>
+              <h3 class="project-title">BrainBoost — AI-Powered Learning Platform</h3>
+              <p class="project-desc" data-i18n="projects.brainboost_desc">
+                Yapay zekâ destekli öğrenme platformu; kullanıcı performansını analiz ederek adaptif soru üretimi, aralıklı tekrar ve kişiselleştirilmiş bilgi pekiştirme sunar.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">AI / LLM</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Modern Web</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-project="brainboost" data-i18n="projects.view_details">
+                  Detayları İncele
+                </button>
+                <a href="https://github.com/keremkose61" target="_blank" rel="noopener noreferrer" class="btn btn-icon-only" aria-label="GitHub Bağlantısı" title="GitHub Deposu">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: PPL ANTREMAN -->
+          <article class="project-card glass-panel" data-category="mobile" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-media">
+              <img src="assets/images/project-ppl.svg" alt="PPL ANTREMAN — Android Fitness Application" loading="lazy" class="project-img">
+              <div class="project-media-overlay">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-project="ppl" data-i18n="projects.view_details">Detayları İncele</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <span class="project-cat-pill">Mobile &amp; Health</span>
+                <span class="project-id">#03</span>
+              </div>
+              <h3 class="project-title">PPL ANTREMAN — Android Fitness Application</h3>
+              <p class="project-desc" data-i18n="projects.ppl_desc">
+                Push-Pull-Legs metodolojisine göre tasarlanmış yerel Android fitness uygulaması; set, tekrar, ağırlık takibi ve hacim grafikleriyle sporcuların gelişimini analiz eder.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Android</span>
+                <span class="tech-tag">Kotlin</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Room DB</span>
+                <span class="tech-tag">Material Design</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-project="ppl" data-i18n="projects.view_details">
+                  Detayları İncele
+                </button>
+                <a href="https://github.com/keremkose61" target="_blank" rel="noopener noreferrer" class="btn btn-icon-only" aria-label="GitHub Bağlantısı" title="GitHub Deposu">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: JARVIS AI -->
+          <article class="project-card glass-panel" data-category="ai desktop" data-aos="fade-up" data-aos-delay="250">
+            <div class="project-media">
+              <img src="assets/images/project-jarvis.svg" alt="JARVIS AI — Local Artificial Intelligence Assistant" loading="lazy" class="project-img">
+              <div class="project-media-overlay">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-project="jarvis" data-i18n="projects.view_details">Detayları İncele</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <span class="project-cat-pill">AI &amp; Automation</span>
+                <span class="project-id">#04</span>
+              </div>
+              <h3 class="project-title">JARVIS AI — Local Artificial Intelligence Assistant</h3>
+              <p class="project-desc" data-i18n="projects.jarvis_desc">
+                İşletim sistemi görevlerini otomatize eden, sesli ve metin komutlarını yerel model mimarileriyle işleyen akıllı masaüstü yapay zekâ asistanı.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Speech Recognition</span>
+                <span class="tech-tag">OS Automation</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Threading</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-project="jarvis" data-i18n="projects.view_details">
+                  Detayları İncele
+                </button>
+                <a href="https://github.com/keremkose61" target="_blank" rel="noopener noreferrer" class="btn btn-icon-only" aria-label="GitHub Bağlantısı" title="GitHub Deposu">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: DevFlow IDE -->
+          <article class="project-card glass-panel" data-category="desktop" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-media">
+              <img src="assets/images/project-devflow.svg" alt="DevFlow IDE — Desktop Development Environment" loading="lazy" class="project-img">
+              <div class="project-media-overlay">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-project="devflow" data-i18n="projects.view_details">Detayları İncele</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <span class="project-cat-pill">Desktop &amp; Tooling</span>
+                <span class="project-id">#05</span>
+              </div>
+              <h3 class="project-title">DevFlow IDE — Desktop Development Environment</h3>
+              <p class="project-desc" data-i18n="projects.devflow_desc">
+                Hafif ve modüler masaüstü geliştirme ortamı; sözdizimi renklendirme, entegre terminal, çoklu sekme desteği ve performans odaklı C++ çekirdeği içerir.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Qt Framework</span>
+                <span class="tech-tag">Code Parser</span>
+                <span class="tech-tag">Multi-threading</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-project="devflow" data-i18n="projects.view_details">
+                  Detayları İncele
+                </button>
+                <a href="https://github.com/keremkose61" target="_blank" rel="noopener noreferrer" class="btn btn-icon-only" aria-label="GitHub Bağlantısı" title="GitHub Deposu">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6: Computer Repair Simulator -->
+          <article class="project-card glass-panel" data-category="desktop" data-aos="fade-up" data-aos-delay="150">
+            <div class="project-media">
+              <img src="assets/images/project-simulator.svg" alt="Computer Repair Simulator — 3D Simulation Game" loading="lazy" class="project-img">
+              <div class="project-media-overlay">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-project="simulator" data-i18n="projects.view_details">Detayları İncele</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <span class="project-cat-pill">3D &amp; Simulation</span>
+                <span class="project-id">#06</span>
+              </div>
+              <h3 class="project-title">Computer Repair Simulator — 3D Simulation Game</h3>
+              <p class="project-desc" data-i18n="projects.simulator_desc">
+                Kullanıcıların donanım parçalarını monte ettiği, arıza tespiti yaptığı ve termal/fiziksel kurallarla bilgisayar toplama sürecini simüle ettiği 3D oyun projesi.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">C++ / C#</span>
+                <span class="tech-tag">3D Graphics</span>
+                <span class="tech-tag">Physics Engine</span>
+                <span class="tech-tag">Hardware Logic</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-project="simulator" data-i18n="projects.view_details">
+                  Detayları İncele
+                </button>
+                <a href="https://github.com/keremkose61" target="_blank" rel="noopener noreferrer" class="btn btn-icon-only" aria-label="GitHub Bağlantısı" title="GitHub Deposu">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 7: TÜRK AI -->
+          <article class="project-card glass-panel" data-category="mobile ai" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-media">
+              <img src="assets/images/project-turkai.svg" alt="TÜRK AI — Android Voice Assistant" loading="lazy" class="project-img">
+              <div class="project-media-overlay">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-project="turkai" data-i18n="projects.view_details">Detayları İncele</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <span class="project-cat-pill">Android &amp; Voice AI</span>
+                <span class="project-id">#07</span>
+              </div>
+              <h3 class="project-title">TÜRK AI — Android Voice Assistant</h3>
+              <p class="project-desc" data-i18n="projects.turkai_desc">
+                Türkçe doğal dil işleme odaklı mobil sesli asistan; sesli komutlarla telefon kontrolü, bilgi sorgulama ve akıllı görev yürütme yetenekleri sunar.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Android</span>
+                <span class="tech-tag">Kotlin</span>
+                <span class="tech-tag">Voice Recognition</span>
+                <span class="tech-tag">AI Services</span>
+                <span class="tech-tag">Material 3</span>
+              </div>
+              <div class="project-card-footer">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-project="turkai" data-i18n="projects.view_details">
+                  Detayları İncele
+                </button>
+                <a href="https://github.com/keremkose61" target="_blank" rel="noopener noreferrer" class="btn btn-icon-only" aria-label="GitHub Bağlantısı" title="GitHub Deposu">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">04 // <span data-i18n="experience.tag">DENEYİM &amp; EĞİTİM</span></span>
+          <h2 class="section-title" data-i18n="experience.title">Gelişim ve Öğrenme Yolculuğu</h2>
+          <p class="section-subtitle" data-i18n="experience.subtitle">Proje odaklı yazılım geliştirme, eğitim temelleri ve yetkinlikler</p>
+        </div>
+
+        <div class="timeline-two-col">
+          <!-- Col 1: Deneyim / Experience -->
+          <div class="timeline-col" data-aos="fade-right">
+            <div class="timeline-heading-wrap">
+              <div class="timeline-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h3 class="timeline-col-title" data-i18n="experience.col_exp">Deneyim &amp; Proje Pratiği</h3>
+            </div>
+
+            <div class="timeline-cards">
+              <!-- Item 1: Independent Software Developer -->
+              <div class="timeline-card glass-panel">
+                <div class="t-card-header">
+                  <span class="t-badge" data-i18n="experience.item1_badge">2023 — Günümüz</span>
+                  <span class="t-status">Aktif</span>
+                </div>
+                <h4 class="t-card-title" data-i18n="experience.item1_title">Bağımsız Yazılım Geliştirici</h4>
+                <div class="t-card-org">Kişisel &amp; Açık Kaynak Projeler</div>
+                <p class="t-card-desc" data-i18n="experience.item1_desc">
+                  Android ekosistemi, yapay zekâ entegrasyonlu araçlar ve masaüstü yazılımları geliştirme. Kod mimarisi, sürüm kontrolü (Git) ve uçtan uca uygulama yaşam döngüsü yönetimi.
+                </p>
+                <div class="t-card-tags">
+                  <span>Android (Kotlin/Java)</span>
+                  <span>Python AI</span>
+                  <span>C++</span>
+                  <span>Git/GitHub</span>
+                </div>
+              </div>
+
+              <!-- Item 2: Editable Placeholder for future corporate experience -->
+              <div class="timeline-card glass-panel placeholder-card">
+                <div class="t-card-header">
+                  <span class="t-badge">[Dönem / Yıl]</span>
+                  <span class="t-status editable-tag">Düzenlenebilir</span>
+                </div>
+                <h4 class="t-card-title">[Pozisyon / Şirket / Proje Adı]</h4>
+                <div class="t-card-org">[Şirket / Organizasyon / Takım Adı]</div>
+                <p class="t-card-desc">
+                  Bu alan kurumsal iş deneyimleri, stajlar veya takım bazlı profesyonel çalışmalar için ayrılmıştır. Gelecekteki iş tecrübeleriniz buraya eklenecektir.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2: Eğitim & Sertifikalar / Education -->
+          <div class="timeline-col" data-aos="fade-left">
+            <div class="timeline-heading-wrap">
+              <div class="timeline-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <h3 class="timeline-col-title" data-i18n="experience.col_edu">Eğitim &amp; Sertifikalar</h3>
+            </div>
+
+            <div class="timeline-cards">
+              <!-- Item 1: Education Placeholder -->
+              <div class="timeline-card glass-panel placeholder-card">
+                <div class="t-card-header">
+                  <span class="t-badge">[Öğrenim Dönemi]</span>
+                  <span class="t-status editable-tag">Eğitim</span>
+                </div>
+                <h4 class="t-card-title">[Üniversite / Lise / Bölüm Adı]</h4>
+                <div class="t-card-org">[Fakülte / Kurum Bilgisi]</div>
+                <p class="t-card-desc">
+                  Resmi eğitim geçmişinizi, devam eden veya mezun olduğunuz lisans/ön lisans programını bu alana ekleyebilirsiniz.
+                </p>
+              </div>
+
+              <!-- Item 2: Certifications Placeholder -->
+              <div class="timeline-card glass-panel placeholder-card">
+                <div class="t-card-header">
+                  <span class="t-badge">[Yıl]</span>
+                  <span class="t-status editable-tag">Sertifika</span>
+                </div>
+                <h4 class="t-card-title">[Sertifika &amp; Başarı Adı]</h4>
+                <div class="t-card-org">[Veren Kurum / Platform]</div>
+                <p class="t-card-desc">
+                  Android, Python, Algoritmalar, Git veya Veritabanı alanlarında tamamlanan kurslar ve kazanılan teknik sertifikalar için hazır şablon alanı.
+                </p>
+              </div>
+
+              <!-- Item 3: Continuous Learning Commitment -->
+              <div class="timeline-card glass-panel">
+                <div class="t-card-header">
+                  <span class="t-badge">Sürekli</span>
+                  <span class="t-status">Devam Ediyor</span>
+                </div>
+                <h4 class="t-card-title" data-i18n="experience.item3_title">Oto-didaktik Öğrenme &amp; Araştırma</h4>
+                <div class="t-card-org">Resmi Dokümantasyonlar, Teknik Makaleler, Açık Kaynak</div>
+                <p class="t-card-desc" data-i18n="experience.item3_desc">
+                  Android Jetpack mimarileri, modern C++ standartları, yapay zekâ API'leri ve güvenlik yaklaşımlarını resmi dokümantasyonlar üzerinden derinlemesine inceleme ve uygulama.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB PROFILE HIGHLIGHT -->
+    <section class="section github-section" id="github">
+      <div class="container">
+        <div class="github-card glass-panel" data-aos="zoom-in">
+          <div class="github-card-inner">
+            <div class="github-avatar-side">
+              <div class="github-avatar-wrapper">
+                <img src="assets/images/avatar.svg" alt="Kerem Köse Avatar" class="github-avatar" width="120" height="120">
+                <span class="github-pulse-badge" title="Aktif Geliştirici"></span>
+              </div>
+              <div class="github-user-info">
+                <h3 class="github-name">Kerem Köse</h3>
+                <a href="https://github.com/keremkose61" target="_blank" rel="noopener noreferrer" class="github-handle">
+                  @keremkose61
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="14" height="14">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="github-text-side">
+              <h4 class="github-heading" data-i18n="github.heading">Açık Kaynak &amp; Kod Dünyam</h4>
+              <p class="github-desc" data-i18n="github.desc">
+                Geliştirdiğim projeleri, açık kaynak denemelerimi ve kodlama yolculuğumu GitHub üzerinden paylaşıyorum. Repolarımı inceleyebilir, yıldız bırakabilir veya katkıda bulunabilirsiniz.
+              </p>
+
+              <div class="github-stats-row">
+                <div class="gh-stat-box">
+                  <span class="gh-stat-value">7+</span>
+                  <span class="gh-stat-label" data-i18n="github.stat_projects">Portföy Projesi</span>
+                </div>
+                <div class="gh-stat-box">
+                  <span class="gh-stat-value">GitHub Pages</span>
+                  <span class="gh-stat-label">Doğrudan Yayında</span>
+                </div>
+                <div class="gh-stat-box">
+                  <span class="gh-stat-value">Public</span>
+                  <span class="gh-stat-label">Açık Repolar</span>
+                </div>
+              </div>
+
+              <div class="github-actions">
+                <a href="https://github.com/keremkose61" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                  <span data-i18n="github.btn_view">GitHub Profilini Ziyaret Et</span>
+                </a>
+                <a href="https://github.com/keremkose61?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="github.btn_repos">
+                  Tüm Repoları İncele
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">05 // <span data-i18n="contact.tag">İLETİŞİM</span></span>
+          <h2 class="section-title" data-i18n="contact.title">Birlikte Harika Bir Şeyler İnşa Edelim</h2>
+          <p class="section-subtitle" data-i18n="contact.subtitle">Yeni projeler, teknik danışmanlık veya sadece bir merhaba demek için bana ulaşın</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-col" data-aos="fade-right">
+            <!-- Email Box with Copy Button -->
+            <div class="contact-card glass-panel">
+              <div class="c-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="c-details">
+                <span class="c-label" data-i18n="contact.email_label">E-Posta Adresi</span>
+                <span class="c-val" id="emailText">keremkose.dev@gmail.com</span>
+              </div>
+              <button class="btn btn-outline btn-sm copy-email-btn" id="copyEmailBtn" aria-label="E-postayı Kopyala" title="E-postayı Kopyala">
+                <span data-i18n="contact.copy">Kopyala</span>
+              </button>
+            </div>
+
+            <!-- GitHub Box -->
+            <div class="contact-card glass-panel">
+              <div class="c-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                </svg>
+              </div>
+              <div class="c-details">
+                <span class="c-label">GitHub</span>
+                <span class="c-val">github.com/keremkose61</span>
+              </div>
+              <a href="https://github.com/keremkose61" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" data-i18n="contact.visit">
+                Ziyaret Et
+              </a>
+            </div>
+
+            <!-- Location Box -->
+            <div class="contact-card glass-panel">
+              <div class="c-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="c-details">
+                <span class="c-label" data-i18n="contact.location_label">Konum</span>
+                <span class="c-val" data-i18n="contact.location_val">Trabzon, Türkiye (Uzaktan Çalışmaya Açık)</span>
+              </div>
+            </div>
+
+            <!-- CV Download Banner Box -->
+            <div class="contact-card glass-panel cv-download-card">
+              <div class="c-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </div>
+              <div class="c-details">
+                <span class="c-label">Curriculum Vitae</span>
+                <span class="c-val">Kerem Kose - CV (PDF)</span>
+              </div>
+              <a href="assets/documents/cv.pdf" download="Kerem_Kose_CV.pdf" class="btn btn-primary btn-sm" data-i18n="contact.download_cv">
+                İndir
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-col glass-panel" data-aos="fade-left">
+            <h3 class="form-title" data-i18n="contact.form_title">Mesaj Gönderin</h3>
+            <p class="form-subtitle" data-i18n="contact.form_subtitle">Formu doldurarak doğrudan e-posta istemciniz üzerinden iletişime geçebilirsiniz.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="formName" class="form-label" data-i18n="contact.name_label">Adınız Soyadınız</label>
+                <input type="text" id="formName" name="name" class="form-input" placeholder="Örn: Ahmet Yılmaz" required>
+                <span class="form-error" id="nameError" data-i18n="contact.name_error">Lütfen adınızı girin.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="formEmail" class="form-label" data-i18n="contact.email_input_label">E-Posta Adresiniz</label>
+                <input type="email" id="formEmail" name="email" class="form-input" placeholder="ornek@alanadi.com" required>
+                <span class="form-error" id="emailError" data-i18n="contact.email_error">Lütfen geçerli bir e-posta adresi girin.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="formSubject" class="form-label" data-i18n="contact.subject_label">Konu</label>
+                <input type="text" id="formSubject" name="subject" class="form-input" placeholder="Proje Teklifi / Tanışma" required>
+                <span class="form-error" id="subjectError" data-i18n="contact.subject_error">Lütfen bir konu belirtin.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="formMessage" class="form-label" data-i18n="contact.message_label">Mesajınız</label>
+                <textarea id="formMessage" name="message" class="form-textarea" rows="4" placeholder="Mesajınızı buraya yazabilirsiniz..." required></textarea>
+                <span class="form-error" id="messageError" data-i18n="contact.message_error">Lütfen mesajınızı yazın.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+                <span data-i18n="contact.send_btn">Mesajı İlet</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-symbol">&lt;</span><span class="logo-name">Kerem Köse</span><span class="logo-dot">.</span><span class="logo-symbol">/&gt;</span>
+        </a>
+        <p class="footer-bio" data-i18n="footer.bio">
+          Building digital experiences through code, creativity and technology.
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <p class="footer-copyright" data-i18n="footer.copyright">
+          © 2026 Kerem Köse. Tüm hakları saklıdır.
+        </p>
+        <p class="footer-subtext" data-i18n="footer.subtext">
+          GitHub Pages üzerinde barındırılmaktadır.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <!-- Social Link -->
+        <a href="https://github.com/keremkose61" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+          </svg>
+        </a>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top-btn" id="backToTopBtn" aria-label="Yukarı Çık" title="Sayfa Başına Dön">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog glass-panel">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Kapat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-body" id="modalContent">
+        <!-- Dynamically injected via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

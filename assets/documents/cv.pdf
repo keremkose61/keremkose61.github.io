@@ -1,0 +1,77 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 2584 >>
+stream
+BT
+/F1 18 Tf
+50 780 Td
+(KEREM KOSE) Tj
+/F1 10 Tf
+0 -18 Td
+(Software Developer | Trabzon, Turkiye) Tj
+0 -14 Td
+(GitHub: https://github.com/keremkose61) Tj
+0 -12 Td
+(--------------------------------------------------------------------------------) Tj
+/F1 11 Tf 0 -18 Td (PROFESSIONAL SUMMARY) Tj /F1 9.5 Tf
+0 -13 Td (Software Developer focused on building digital experiences through code,) Tj
+0 -13 Td (creativity, and technology. Passionate about learning new technologies and) Tj
+0 -13 Td (engineering robust software solutions for real-world challenges.) Tj
+0 -8 Td () Tj
+/F1 11 Tf 0 -18 Td (TECHNICAL SKILLS) Tj /F1 9.5 Tf
+0 -13 Td (- Programming Languages: Python, Java, Kotlin, C++, JavaScript, PHP) Tj
+0 -13 Td (- Mobile & Systems: Android Development, Native SDK, Desktop Systems) Tj
+0 -13 Td (- Web & Database: HTML5, CSS3, Modern JS, MySQL, REST APIs) Tj
+0 -13 Td (- Tools & Workflow: Git, GitHub, Linux, Android Studio, Clean Architecture) Tj
+0 -8 Td () Tj
+/F1 11 Tf 0 -18 Td (FEATURED PROJECTS) Tj /F1 9.5 Tf
+0 -13 Td (1. ODIS - Okul Disiplin ve Izleme Sistemi \(PHP, MySQL, JS\)) Tj
+0 -13 Td (   Comprehensive discipline and student record tracking system for schools.) Tj
+0 -13 Td (2. BrainBoost - AI-Powered Learning Platform \(Python, AI/LLM, Web\)) Tj
+0 -13 Td (   Adaptive quiz engine and AI-driven personalized knowledge retention.) Tj
+0 -13 Td (3. PPL ANTREMAN - Android Fitness Application \(Android, Kotlin/Java, Room\)) Tj
+0 -13 Td (   Push-Pull-Legs workout logging and performance analytics app.) Tj
+0 -13 Td (4. JARVIS AI - Local Artificial Intelligence Assistant \(Python, NLP, Automation\)) Tj
+0 -13 Td (   Voice-controlled offline system assistant and automation pipeline.) Tj
+0 -13 Td (5. DevFlow IDE - Desktop Development Environment \(C++, Python, Qt\)) Tj
+0 -13 Td (   Lightweight, modular code editor and developer productivity tool.) Tj
+0 -13 Td (6. Computer Repair Simulator - 3D Simulation Game \(C++, 3D Graphics\)) Tj
+0 -13 Td (   Hardware assembly and diagnostic simulation environment.) Tj
+0 -13 Td (7. TURK AI - Android Voice Assistant \(Android, Kotlin, AI Services\)) Tj
+0 -13 Td (   Turkish voice assistant with on-device NLP and speech interactions.) Tj
+0 -8 Td () Tj
+/F1 11 Tf 0 -18 Td (EDUCATION & CERTIFICATIONS) Tj /F1 9.5 Tf
+0 -13 Td (- [Egitim Bilgisi / Education Placeholder]) Tj
+0 -13 Td (- [Sertifikalar & Basarilar / Certificates Placeholder]) Tj
+0 -8 Td () Tj
+/F1 11 Tf 0 -18 Td (CONTACT & PROFILES) Tj /F1 9.5 Tf
+0 -13 Td (- GitHub: https://github.com/keremkose61) Tj
+0 -13 Td (- Portfolio: https://keremkose61.github.io) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000002877 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2947
+%%EOF

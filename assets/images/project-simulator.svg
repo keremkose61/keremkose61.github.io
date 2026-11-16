@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" fill="none">
+  <defs>
+    <linearGradient id="bg_Computer Repair Sim" x1="0" y1="0" x2="600" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121A15"/>
+      <stop offset="0.6" stop-color="#0E1411"/>
+      <stop offset="1" stop-color="#080B0A"/>
+    </linearGradient>
+    <linearGradient id="line_Computer Repair Sim" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#35E69A" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#E74C3C" stop-opacity="0.2"/>
+    </linearGradient>
+    <radialGradient id="glow_Computer Repair Sim" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#35E69A" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#35E69A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow_Computer Repair Sim">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#35E69A" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="600" height="380" rx="16" fill="url(#bg_Computer Repair Sim)"/>
+  <rect width="600" height="380" rx="16" fill="url(#glow_Computer Repair Sim)"/>
+  <rect width="600" height="380" rx="16" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="600" height="3" fill="url(#line_Computer Repair Sim)"/>
+
+  <!-- Code/Tech Grid Pattern -->
+  <g opacity="0.08" stroke="#35E69A" stroke-width="1">
+    <line x1="0" y1="60" x2="600" y2="60"/>
+    <line x1="0" y1="120" x2="600" y2="120"/>
+    <line x1="0" y1="180" x2="600" y2="180"/>
+    <line x1="0" y1="240" x2="600" y2="240"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="60" y1="0" x2="60" y2="380"/>
+    <line x1="180" y1="0" x2="180" y2="380"/>
+    <line x1="300" y1="0" x2="300" y2="380"/>
+    <line x1="420" y1="0" x2="420" y2="380"/>
+    <line x1="540" y1="0" x2="540" y2="380"/>
+  </g>
+
+  <!-- Window Header with Mac Buttons -->
+  <g transform="translate(24, 20)">
+    <circle cx="8" cy="8" r="5" fill="#EF4444" opacity="0.8"/>
+    <circle cx="24" cy="8" r="5" fill="#F59E0B" opacity="0.8"/>
+    <circle cx="40" cy="8" r="5" fill="#10B981" opacity="0.8"/>
+    <rect x="64" y="0" width="160" height="16" rx="8" fill="#15211B"/>
+    <text x="144" y="11" fill="#75887E" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">terminal://keremkose</text>
+  </g>
+
+  <!-- Badge Pill -->
+  <g transform="translate(420, 20)">
+    <rect width="156" height="22" rx="11" fill="#14211A" stroke="#35E69A" stroke-width="1" stroke-opacity="0.4"/>
+    <circle cx="12" cy="11" r="3.5" fill="#35E69A"/>
+    <text x="88" y="14" fill="#35E69A" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">ACTIVE BUILD</text>
+  </g>
+
+  <!-- Center Content UI Mockup Box -->
+  <g transform="translate(36, 60)">
+    <rect width="528" height="280" rx="12" fill="#0D1310" stroke="rgba(53, 230, 154, 0.2)" stroke-width="1.2"/>
+    
+    <!-- Inner Top Banner -->
+    <rect x="0" y="0" width="528" height="42" rx="12" fill="#121C16"/>
+    <rect x="0" y="30" width="528" height="12" fill="#121C16"/>
+    <line x1="0" y1="42" x2="528" y2="42" stroke="rgba(255,255,255,0.06)"/>
+    
+    <!-- Title & Tag -->
+    <text x="20" y="27" fill="#F5F7F6" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">Computer Repair Sim</text>
+    <text x="180" y="26" fill="#35E69A" font-family="'JetBrains Mono', monospace" font-size="10" opacity="0.9">[3D SIMULATION GAME]</text>
+
+    <!-- Architecture Visual Grid Inside -->
+    <g transform="translate(20, 60)">
+      <!-- Left Info Box -->
+      <rect width="230" height="180" rx="8" fill="#111814" stroke="rgba(255,255,255,0.05)"/>
+      <text x="16" y="28" fill="#35E69A" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">// SYSTEM TELEMETRY</text>
+      
+      <g transform="translate(16, 44)">
+        <text x="0" y="14" fill="#A0AAA4" font-family="system-ui, sans-serif" font-size="11">Status: <tspan fill="#35E69A">ONLINE &amp; COMPILED</tspan></text>
+        <text x="0" y="36" fill="#A0AAA4" font-family="system-ui, sans-serif" font-size="11">Architecture: <tspan fill="#F5F7F6">Modular Clean Code</tspan></text>
+        <text x="0" y="58" fill="#A0AAA4" font-family="system-ui, sans-serif" font-size="11">Optimization: <tspan fill="#F5F7F6">High Efficiency</tspan></text>
+        <text x="0" y="80" fill="#A0AAA4" font-family="system-ui, sans-serif" font-size="11">Repository: <tspan fill="#35E69A">github.com/keremkose61</tspan></text>
+      </g>
+      
+      <!-- Mini Sparkline / Code wave -->
+      <path d="M16 160 L40 145 L70 155 L100 135 L140 150 L170 130 L210 140" stroke="#35E69A" stroke-width="2" fill="none" opacity="0.8"/>
+      <circle cx="210" cy="140" r="3" fill="#35E69A"/>
+
+      <!-- Right Feature Cards -->
+      <g transform="translate(250, 0)">
+        <rect width="238" height="180" rx="8" fill="#111814" stroke="rgba(255,255,255,0.05)"/>
+        <text x="16" y="28" fill="#35E69A" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">// CORE MODULES</text>
+        
+        <g transform="translate(16, 40)">
+          <!-- Feature Items -->
+          <rect x="0" y="0" width="206" height="26" rx="5" fill="#16221B"/>
+          <circle cx="12" cy="13" r="3" fill="#35E69A"/>
+          <text x="24" y="17" fill="#F5F7F6" font-family="system-ui, sans-serif" font-size="10">Hardware Assembly</text>
+          
+          <rect x="0" y="32" width="206" height="26" rx="5" fill="#16221B"/>
+          <circle cx="12" cy="45" r="3" fill="#35E69A"/>
+          <text x="24" y="49" fill="#F5F7F6" font-family="system-ui, sans-serif" font-size="10">Component Diagnostics</text>
+          
+          <rect x="0" y="64" width="206" height="26" rx="5" fill="#16221B"/>
+          <circle cx="12" cy="77" r="3" fill="#35E69A"/>
+          <text x="24" y="81" fill="#F5F7F6" font-family="system-ui, sans-serif" font-size="10">Thermal Logic</text>
+          
+          <rect x="0" y="96" width="206" height="26" rx="5" fill="#16221B"/>
+          <circle cx="12" cy="109" r="3" fill="#35E69A"/>
+          <text x="24" y="113" fill="#F5F7F6" font-family="system-ui, sans-serif" font-size="10">3D Interactive Rig</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
