@@ -117,7 +117,7 @@
         copied: "Kopyalandı!",
         visit: "Ziyaret Et",
         location_label: "Konum",
-        location_val: "Trabzon, Türkiye (Uzaktan Çalışmaya Açık)",
+        location_val: "İstanbul, Türkiye (Uzaktan Çalışmaya Açık)",
         download_cv: "İndir",
         form_title: "Mesaj Gönderin",
         form_subtitle: "Formu doldurarak doğrudan e-posta istemciniz üzerinden iletişime geçebilirsiniz.",
@@ -232,7 +232,7 @@
         copied: "Copied!",
         visit: "Visit",
         location_label: "Location",
-        location_val: "Trabzon, Turkey (Open to Remote)",
+        location_val: "Istanbul, Türkiye (Open to Remote)",
         download_cv: "Download",
         form_title: "Send a Message",
         form_subtitle: "Fill out the form to get in touch directly via your email client.",
@@ -710,7 +710,7 @@
         window.open('https://github.com/keremkose61', '_blank');
         break;
       case 'contact':
-        response = "Email: keremkose.dev@gmail.com | Location: Trabzon, Turkey";
+        response = "Email: keremkose.dev@gmail.com | Location: Istanbul, Türkiye";
         break;
       case 'cv':
         response = "Opening CV: assets/documents/cv.pdf";
