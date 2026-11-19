@@ -858,71 +858,86 @@
      10. CONTACT FORM VALIDATION & MAILTO TRIGGER
      ========================================================================== */
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const nameInput = document.getElementById('formName');
       const emailInput = document.getElementById('formEmail');
       const subjectInput = document.getElementById('formSubject');
       const messageInput = document.getElementById('formMessage');
+      const submitBtn = document.getElementById('formSubmitBtn');
 
       let isValid = true;
-
-      // Validate Name
       if (!nameInput.value.trim()) {
         setFieldError(nameInput, true);
         isValid = false;
-      } else {
-        setFieldError(nameInput, false);
-      }
+      } else setFieldError(nameInput, false);
 
-      // Validate Email
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
       if (!emailRegex.test(emailInput.value.trim())) {
         setFieldError(emailInput, true);
         isValid = false;
-      } else {
-        setFieldError(emailInput, false);
-      }
+      } else setFieldError(emailInput, false);
 
-      // Validate Subject
       if (!subjectInput.value.trim()) {
         setFieldError(subjectInput, true);
         isValid = false;
-      } else {
-        setFieldError(subjectInput, false);
-      }
+      } else setFieldError(subjectInput, false);
 
-      // Validate Message
       if (!messageInput.value.trim()) {
         setFieldError(messageInput, true);
         isValid = false;
-      } else {
-        setFieldError(messageInput, false);
-      }
+      } else setFieldError(messageInput, false);
 
       if (!isValid) return;
 
-      // Success Feedback & Mailto execution
-      const recipient = "keremkose.dev@gmail.com";
-      const subject = encodeURIComponent(`[Portfolio İletişim] ${subjectInput.value.trim()}`);
-      const body = encodeURIComponent(
-        `İsim: ${nameInput.value.trim()}\nE-posta: ${emailInput.value.trim()}\n\nMesaj:\n${messageInput.value.trim()}`
-      );
+      const originalButtonHtml = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.setAttribute('aria-busy', 'true');
+      }
 
-      const mailtoUrl = `mailto:${recipient}?subject=${subject}&body=${body}`;
+      const payload = {
+        name: nameInput.value.trim(),
+        email: emailInput.value.trim(),
+        _replyto: emailInput.value.trim(),
+        _subject: `[Portfolio İletişim] ${subjectInput.value.trim()}`,
+        subject: subjectInput.value.trim(),
+        message: messageInput.value.trim(),
+        _template: 'table'
+      };
 
-      showToast(
-        currentLang === 'tr'
-          ? "Form onaylandı! E-posta istemciniz açılıyor..."
-          : "Form verified! Launching your mail client..."
-      );
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/keremkose.dev@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
 
-      setTimeout(() => {
-        window.location.href = mailtoUrl;
-      }, 700);
+        const result = await response.json();
+        if (!response.ok || result.success !== 'true' && result.success !== true) {
+          throw new Error(result.message || 'Form submission failed');
+        }
 
-      contactForm.reset();
+        showToast(currentLang === 'tr'
+          ? 'Mesajın başarıyla gönderildi. Teşekkürler!'
+          : 'Your message was sent successfully. Thank you!');
+        contactForm.reset();
+      } catch (error) {
+        console.error('Contact form error:', error);
+        showToast(currentLang === 'tr'
+          ? 'Mesaj gönderilemedi. Lütfen e-posta bağlantısını kullanarak doğrudan yaz.'
+          : 'Message could not be sent. Please use the email link to contact me directly.', 5000);
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.removeAttribute('aria-busy');
+          submitBtn.innerHTML = originalButtonHtml;
+        }
+      }
     });
   }
 
